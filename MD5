@@ -1,11 +1,11 @@
-e1b955b535c4458849b0dd6cfeefcdbf *DESCRIPTION
-9b734bc6de7c63d36aedd818770ce783 *NAMESPACE
+4b04db81e10d6cc9e22023b01b678168 *DESCRIPTION
+8b153eec0e7b0c4db1c5de52eefb90ad *NAMESPACE
 1f36dd44b8d5bd9aa399e5f82ea5db55 *R/RcppExports.R
-4227ddfce59922a3c885f394e8a06ebd *R/bridge.R
-85e20852d26e6b9f33068308620c2628 *R/cv.bridge.R
-5ba1e31849423c15ad087537b2828616 *R/cv.rbridge.R
+14c80bd1ed72b254bae7f8ca53f41fa6 *R/bridge.R
+38b4fe8b730e7422dc2877003ee8a6ca *R/cv.bridge.R
+bc9d44a4a7d90d7a45f8b6feeb6d733f *R/cv.rbridge.R
 c3577928e2ccb1c70b522bc2fc1a50e7 *R/methods.R
-85a410b12773e2f3197fee929f1efea5 *R/rbridge.R
+6a67643fc05aa137b9b18eb2c2d698ab *R/rbridge.R
 27db412f813e2233944661aa365ed54e *R/utilities.R
 14d32a530baec8b4af9587d4f2cf15c8 *man/bridge.Rd
 7bd8dc5a33fea085e9842596c16d9fdf *man/coef.bridge.Rd

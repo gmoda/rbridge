@@ -63,18 +63,23 @@
 cv.bridge = function (X, y, q, lambda,nfolds=10,
                        lambda.min=ifelse(n>p,.001,.05), nlambda=100,
                        eta=1e-7, converge=10^10,num_threads = 10) {
-  if (class(X) != "matrix") {
-    tmp <- try(X <- model.matrix(~0 + ., data = X), silent = TRUE)
+  if (!is(X, "matrix")) {
+    tmp <- try(X <- model.matrix(~0+., data=X), silent=TRUE)
     if (class(tmp)[1] == "try-error") 
       stop("X must be a matrix or able to be coerced to a matrix")
   }
-  if (storage.mode(X) == "integer") 
+  if (storage.mode(X)=="integer") 
     storage.mode(X) <- "double"
-  if (class(y) != "numeric") {
-    tmp <- try(y <- as.numeric(y), silent = TRUE)
+  
+  if (!is(y, "numeric")) {
+    tmp <- try(y <- as.numeric(y), silent=TRUE)
     if (class(tmp)[1] == "try-error") 
       stop("y must numeric or able to be coerced to numeric")
   }
+  
+  
+
+
   
   ## Set up XX, yy, lambda
   stdX <- standard(X)
