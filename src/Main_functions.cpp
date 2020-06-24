@@ -319,7 +319,7 @@ arma::mat CV_Bridge(const arma::mat & x,
   
   
   
-# pragma omp parallel for num_threads(num_threads)
+# pragma omp atomic for num_threads(num_threads)
   for(arma::uword fold = 0; fold < num_folds; fold++){
     // Get test and training samples
     
@@ -364,7 +364,7 @@ arma::mat CV_RBridge(const arma::mat & x,
   
   
   
-# pragma omp parallel for num_threads(num_threads)
+# pragma omp atomic for num_threads(num_threads)
   for(arma::uword fold = 0; fold < num_folds; fold++){
     // Get test and training samples
     arma::uvec test = linspace<uvec>(inint[fold], inint[fold + 1] - 1, inint[fold + 1] - inint[fold]);
